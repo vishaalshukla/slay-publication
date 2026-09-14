@@ -35,7 +35,7 @@
         <div class="mega-menu">
           <div class="mega-col">
             <p class="mega-heading">&#127979; Research &amp; Writing</p>
-            <a href="#services">Thesis Writing</a>
+            <a href="javascript:void(0)" onclick="openModal('thesis')">Thesis Writing</a>
             <a href="#services">Dissertation Writing</a>
             <a href="#services">Research Publication</a>
             <a href="#services">Book Publication</a>
@@ -328,6 +328,198 @@
     <span>Privacy · Terms · Refund policy</span>
   </div>
 </footer>
+
+<!-- SERVICE MODAL -->
+<div id="service-modal" class="svc-modal" onclick="closeModalOutside(event)">
+  <div class="svc-modal-box">
+    <button class="svc-close" onclick="closeModal()">&times;</button>
+    <div id="svc-modal-content"></div>
+  </div>
+</div>
+
+<script>
+const modalContent = {
+  thesis: `
+  <div class="svc-hero">
+    <p class="svc-eyebrow">Thesis Writing Support</p>
+    <h1>Turning Your Research Into a <em>Stronger Thesis</em></h1>
+    <p class="svc-sub">From idea to final submission, we provide expert guidance, professional support, and personalised solutions for your thesis journey.</p>
+    <a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Free Thesis Consultation &rarr;</a>
+  </div>
+
+  <div class="svc-section">
+    <p class="svc-label">COMMON ROADBLOCKS</p>
+    <h2>Challenges You Face During <em>Thesis Research</em></h2>
+    <p class="svc-sub">Every PhD journey comes with obstacles. Here are the most common challenges — and how we help you overcome them.</p>
+    <div class="svc-challenges">
+      <div class="svc-ch-card">
+        <div class="svc-ch-icon">&#128269;</div>
+        <h3>Complex Research Requirements</h3>
+        <p>Finding authentic sources, reviewing vast literature, and structuring original research that meets university standards.</p>
+        <span class="svc-num">01</span>
+      </div>
+      <div class="svc-ch-card">
+        <div class="svc-ch-icon">&#9200;</div>
+        <h3>Time Management Struggles</h3>
+        <p>Balancing a full-time job, family responsibilities, and academic deadlines all at once — it's exhausting.</p>
+        <span class="svc-num">02</span>
+      </div>
+      <div class="svc-ch-card svc-ch-active">
+        <div class="svc-ch-icon">&#128221;</div>
+        <h3>Technical Writing Standards</h3>
+        <p>Meeting strict university formatting rules, citation styles, academic tone, and submission guidelines.</p>
+        <span class="svc-num">03</span>
+      </div>
+      <div class="svc-ch-card">
+        <div class="svc-ch-icon">&#128202;</div>
+        <h3>Data Analysis Hurdles</h3>
+        <p>Managing statistical tools like SPSS, R, or AMOS and correctly interpreting complex research findings.</p>
+        <span class="svc-num">04</span>
+      </div>
+      <div class="svc-ch-card">
+        <div class="svc-ch-icon">&#128552;</div>
+        <h3>Fear of Academic Rejection</h3>
+        <p>Anxiety over whether your thesis will meet examiner expectations — impacting research quality and motivation.</p>
+        <span class="svc-num">05</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-section svc-bg-light">
+    <p class="svc-label">THESIS ARCHITECTURE</p>
+    <h2>How We Structure Your <em>Complete Thesis</em></h2>
+    <p class="svc-sub">Each chapter is crafted with precision — aligned with your university requirements and examiner expectations.</p>
+    <div class="svc-thesis-banner">&#128196; Your PhD Thesis &nbsp;&nbsp;<span>200–350 Pages &middot; Fully Original &middot; Examiner-Ready</span></div>
+    <div class="svc-chapters">
+      <div class="svc-ch-box" style="--acc:#e74c6f">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 1</span><span class="svc-ch-ico">&#127919;</span></div>
+        <h3>Title Selection</h3>
+        <p>Identifying a relevant, original, and feasible research title aligned with your field and university requirements.</p>
+      </div>
+      <div class="svc-ch-box" style="--acc:#3b82f6">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 2</span><span class="svc-ch-ico">&#128218;</span></div>
+        <h3>Introduction</h3>
+        <p>Background, problem statement, research objectives, questions, scope, and significance of the study.</p>
+      </div>
+      <div class="svc-ch-box" style="--acc:#22c55e">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 3</span><span class="svc-ch-ico">&#128218;</span></div>
+        <h3>Literature Review</h3>
+        <p>Comprehensive review of existing research, theoretical framework, research gaps, and conceptual model.</p>
+      </div>
+      <div class="svc-ch-box" style="--acc:#a855f7">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 4</span><span class="svc-ch-ico">&#128300;</span></div>
+        <h3>Research Methodology</h3>
+        <p>Research design, data collection methods, sampling strategy, tools, validity and reliability testing.</p>
+      </div>
+      <div class="svc-ch-box" style="--acc:#f97316">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 5</span><span class="svc-ch-ico">&#128193;</span></div>
+        <h3>Data Collection</h3>
+        <p>Field work, surveys, interviews, or secondary data gathering — structured and ethically compliant.</p>
+      </div>
+      <div class="svc-ch-box" style="--acc:#14b8a6">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 6</span><span class="svc-ch-ico">&#128201;</span></div>
+        <h3>Data Analysis</h3>
+        <p>Quantitative (SPSS, AMOS, R) or qualitative analysis, result tables, charts, and statistical interpretation.</p>
+      </div>
+      <div class="svc-ch-box" style="--acc:#ef4444">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 7</span><span class="svc-ch-ico">&#128161;</span></div>
+        <h3>Results &amp; Discussion</h3>
+        <p>Findings presentation, hypothesis testing, comparison with literature, and in-depth academic discussion.</p>
+      </div>
+      <div class="svc-ch-box" style="--acc:#6366f1">
+        <div class="svc-ch-top"><span class="svc-ch-tag">Ch. 8</span><span class="svc-ch-ico">&#9989;</span></div>
+        <h3>Conclusion &amp; References</h3>
+        <p>Summary of findings, implications, limitations, future scope, and complete bibliography (APA/MLA/Chicago).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-section">
+    <p class="svc-label">OUR PROCESS</p>
+    <h2>6-Step Journey from <em>Idea to Degree</em></h2>
+    <div class="svc-steps">
+      <div class="svc-step">
+        <div class="svc-step-icon" style="background:#3b82f6">&#128203;</div>
+        <div class="svc-step-body" style="border-left-color:#3b82f6">
+          <h3><span class="svc-step-num">01</span> Free Profile Assessment</h3>
+          <p>We evaluate your academic background, research area, and timeline to suggest the best thesis approach.</p>
+        </div>
+      </div>
+      <div class="svc-step">
+        <div class="svc-step-icon" style="background:#a855f7">&#128161;</div>
+        <div class="svc-step-body" style="border-left-color:#a855f7">
+          <h3><span class="svc-step-num">02</span> Topic &amp; Synopsis</h3>
+          <p>3–4 research topic suggestions with briefs. We draft the synopsis and guide through university approval.</p>
+        </div>
+      </div>
+      <div class="svc-step">
+        <div class="svc-step-icon" style="background:#f97316">&#9997;</div>
+        <div class="svc-step-body" style="border-left-color:#f97316">
+          <h3><span class="svc-step-num">03</span> Chapter-wise Writing</h3>
+          <p>Each chapter written with your supervisor's framework in mind — reviewed and approved by you at every stage.</p>
+        </div>
+      </div>
+      <div class="svc-step">
+        <div class="svc-step-icon" style="background:#22c55e">&#128201;</div>
+        <div class="svc-step-body" style="border-left-color:#22c55e">
+          <h3><span class="svc-step-num">04</span> Data Analysis</h3>
+          <p>Quantitative or qualitative analysis using SPSS, R, ATLAS.ti or thematic analysis — fully interpreted.</p>
+        </div>
+      </div>
+      <div class="svc-step">
+        <div class="svc-step-icon" style="background:#ef4444">&#128269;</div>
+        <div class="svc-step-body" style="border-left-color:#ef4444">
+          <h3><span class="svc-step-num">05</span> Plagiarism &amp; Formatting</h3>
+          <p>Turnitin check, plagiarism reduction, and complete formatting as per university/APA/MLA guidelines.</p>
+        </div>
+      </div>
+      <div class="svc-step">
+        <div class="svc-step-icon" style="background:#10203f">&#127891;</div>
+        <div class="svc-step-body" style="border-left-color:#10203f">
+          <h3><span class="svc-step-num">06</span> Viva Preparation</h3>
+          <p>Mock viva sessions, PPT preparation, and defence coaching to help you present with full confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="svc-section svc-bg-light">
+    <p class="svc-label">SIMPLY SLAY PUBLICATION HOUSE</p>
+    <h2>What Makes Our Thesis Support <em>Different</em></h2>
+    <p class="svc-sub">More than just support — we're your research partner, committed to quality, guidance, and success at every step.</p>
+    <div class="svc-why">
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#ede9fe;color:#7c3aed">&#127891;</span><span class="svc-why-num" style="color:#7c3aed">01</span><h3>PhD-Qualified Mentors</h3><p>Every advisor holds a doctoral degree. You get guidance from people who have walked the same path.</p></div>
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#ffe4e6;color:#e11d48">&#128274;</span><span class="svc-why-num" style="color:#e11d48">02</span><h3>100% Confidential</h3><p>Your research, data, and personal information are never shared. Full confidentiality guaranteed at every stage.</p></div>
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#dcfce7;color:#16a34a">&#9889;</span><span class="svc-why-num" style="color:#16a34a">03</span><h3>End-to-End Support</h3><p>From topic selection to viva preparation — we stay with you through every chapter and every challenge.</p></div>
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#dbeafe;color:#2563eb">&#127758;</span><span class="svc-why-num" style="color:#2563eb">04</span><h3>Globally Recognised</h3><p>Our thesis support aligns with international doctoral standards and university-specific requirements worldwide.</p></div>
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#ffedd5;color:#ea580c">&#128196;</span><span class="svc-why-num" style="color:#ea580c">05</span><h3>Plagiarism-Free Work</h3><p>Every thesis is checked with Turnitin/iThenticate. We ensure your work is original and submission-ready.</p></div>
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#f3e8ff;color:#9333ea">&#128260;</span><span class="svc-why-num" style="color:#9333ea">06</span><h3>Unlimited Revisions</h3><p>We refine until it's perfect. Our revision policy ensures your thesis meets the highest standards before submission.</p></div>
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#ccfbf1;color:#0d9488">&#128203;</span><span class="svc-why-num" style="color:#0d9488">07</span><h3>Academic Integrity</h3><p>Ethical research practices, genuine work, and complete transparency at every step.</p></div>
+      <div class="svc-why-card"><span class="svc-why-ico" style="background:#ffe4e6;color:#e11d48">&#127919;</span><span class="svc-why-num" style="color:#e11d48">08</span><h3>Your Success, Our Priority</h3><p>We are not just a service provider; we are your research partner, dedicated to helping you achieve your academic goals.</p></div>
+    </div>
+    <p class="svc-tagline">&#128218; &nbsp; RESEARCH &middot; WRITE &middot; ACHIEVE</p>
+  </div>
+
+  <div class="svc-cta">
+    <a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Free Thesis Consultation &rarr;</a>
+  </div>
+  `
+};
+
+function openModal(key) {
+  document.getElementById('svc-modal-content').innerHTML = modalContent[key];
+  document.getElementById('service-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('service-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeModalOutside(e) {
+  if (e.target.id === 'service-modal') closeModal();
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
 
 </body>
 </html>
