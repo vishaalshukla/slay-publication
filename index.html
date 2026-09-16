@@ -37,7 +37,7 @@
             <p class="mega-heading">&#127979; Research &amp; Writing</p>
             <a href="javascript:void(0)" onclick="openModal('thesis')">Thesis Writing</a>
             <a href="javascript:void(0)" onclick="openModal('dissertation')">Dissertation Writing</a>
-            <a href="#services">Research Publication</a>
+            <a href="javascript:void(0)" onclick="openModal('research')">Research Publication</a>
             <a href="#services">Book Publication</a>
             <a href="#services">Profile Enhancement</a>
             <a href="#services">Biography Writing</a>
@@ -391,9 +391,94 @@ const modalContent = {
   </div>
   <div class="svc-cta"><a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Free Dissertation Consultation &rarr;</a></div>
   `,
+  research: `
+  <div class="svc-hero">
+    <p class="svc-eyebrow">&#128218; Research Publication Support</p>
+    <h1>Turn Your Research Into <em>World-Class Publications</em></h1>
+    <p class="svc-sub">From manuscript writing to journal submission and reviewer response &mdash; we handle every step of your research publication journey with expertise, precision and care.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;">
+      <a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Started &rarr;</a>
+      <a class="btn btn-ghost" href="https://wa.me/917905551271">&#128172; Chat on WhatsApp</a>
+    </div>
+    <div class="rp-stats">
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#dbeafe;color:#2563eb">&#127891;</span><div><strong>5,000+</strong><span>Research Papers Published</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#ede9fe;color:#7c3aed">&#127758;</span><div><strong>Scopus &amp; WoS</strong><span>Indexed Journals</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#dcfce7;color:#16a34a">&#128203;</span><div><strong>PubMed &amp; Springer</strong><span>Access</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#fef3c7;color:#d97706">&#9200;</span><div><strong>8&ndash;16 Weeks</strong><span>Avg. Publication Time</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#ffe4e6;color:#e11d48">&#128737;</span><div><strong>100%</strong><span>Quality Assurance</span></div></div>
+    </div>
+  </div>
+
+  <div class="svc-section">
+    <p class="svc-label">WHERE WE PUBLISH</p>
+    <h2>Journal Types We <em>Specialize In</em></h2>
+    <div class="rp-journals">
+      <div class="rp-journal" style="--jc:#3b82f6"><span class="rp-dot" style="background:#3b82f6"></span><h3 style="color:#3b82f6">Scopus Indexed</h3><p>Internationally recognised database. High credibility for doctoral and academic career advancement.</p></div>
+      <div class="rp-journal" style="--jc:#a855f7"><span class="rp-dot" style="background:#a855f7"></span><h3 style="color:#a855f7">Web of Science</h3><p>Premier citation database. Essential for global research impact and academic recognition.</p></div>
+      <div class="rp-journal" style="--jc:#22c55e"><span class="rp-dot" style="background:#22c55e"></span><h3 style="color:#22c55e">PubMed / Embase</h3><p>Leading biomedical and life sciences databases &mdash; essential for health and medical research publication.</p></div>
+      <div class="rp-journal" style="--jc:#f59e0b"><span class="rp-dot" style="background:#f59e0b"></span><h3 style="color:#f59e0b">ABDC Listed</h3><p>Australian Business Deans Council ranked journals &mdash; globally respected for management and business research.</p></div>
+      <div class="rp-journal" style="--jc:#ef4444"><span class="rp-dot" style="background:#ef4444"></span><h3 style="color:#ef4444">Springer Nature</h3><p>Publish with one of the world's leading academic publishers across science, technology, and humanities.</p></div>
+      <div class="rp-journal" style="--jc:#6b7280"><span class="rp-dot" style="background:#6b7280"></span><h3 style="color:#6b7280">Peer-Reviewed Journals</h3><p>Rigorous expert review process that validates research quality and strengthens academic credibility.</p></div>
+    </div>
+  </div>
+
+  <div class="svc-section svc-bg-light">
+    <p class="svc-label">PUBLICATION JOURNEY</p>
+    <h2>8-Step Publication Process &mdash; <em>Manuscript to DOI</em></h2>
+    <p class="svc-sub">We manage every step. You focus on your research &mdash; we handle the journey to publication.</p>
+    <div class="rp-steps">
+      <div class="rp-step-card" style="--sc:#3b82f6"><div class="rp-step-top"><span class="rp-step-ico" style="background:#dbeafe;color:#2563eb">&#128269;</span><span class="rp-step-lbl" style="color:#3b82f6">Step 01</span></div><h3>Research Paper Assessment</h3><p>We evaluate your manuscript, research objectives, and target audience to recommend the most suitable journal category.</p></div>
+      <div class="rp-step-card" style="--sc:#a855f7"><div class="rp-step-top"><span class="rp-step-ico" style="background:#ede9fe;color:#7c3aed">&#128193;</span><span class="rp-step-lbl" style="color:#a855f7">Step 02</span></div><h3>Journal Identification</h3><p>Our experts shortlist 3&ndash;5 suitable journals from Scopus, Web of Science, PubMed, or Springer Nature aligned with your research domain.</p></div>
+      <div class="rp-step-card" style="--sc:#f59e0b"><div class="rp-step-top"><span class="rp-step-ico" style="background:#fef3c7;color:#d97706">&#9997;</span><span class="rp-step-lbl" style="color:#f59e0b">Step 03</span></div><h3>Manuscript Preparation</h3><p>Complete paper writing or editing &mdash; abstract, keywords, literature review, methodology, results, discussion, and references.</p></div>
+      <div class="rp-step-card" style="--sc:#22c55e"><div class="rp-step-top"><span class="rp-step-ico" style="background:#dcfce7;color:#16a34a">&#128269;</span><span class="rp-step-lbl" style="color:#22c55e">Step 04</span></div><h3>Plagiarism Check</h3><p>Turnitin/iThenticate scan. Plagiarism reduction to below 10% &mdash; meeting international journal standards.</p></div>
+      <div class="rp-step-card" style="--sc:#ef4444"><div class="rp-step-top"><span class="rp-step-ico" style="background:#ffe4e6;color:#e11d48">&#128196;</span><span class="rp-step-lbl" style="color:#ef4444">Step 05</span></div><h3>Journal Formatting</h3><p>Formatting as per the exact guidelines of the target journal &mdash; citation style, font, structure, and word limits.</p></div>
+      <div class="rp-step-card" style="--sc:#10203f"><div class="rp-step-top"><span class="rp-step-ico" style="background:#e0e7ff;color:#10203f">&#128228;</span><span class="rp-step-lbl" style="color:#10203f">Step 06</span></div><h3>Submission &amp; Tracking</h3><p>We submit on your behalf and track the review process. Communication with editors managed by our team.</p></div>
+      <div class="rp-step-card" style="--sc:#f59e0b"><div class="rp-step-top"><span class="rp-step-ico" style="background:#fef3c7;color:#d97706">&#128172;</span><span class="rp-step-lbl" style="color:#f59e0b">Step 07</span></div><h3>Reviewer Response</h3><p>Point-by-point response to reviewer comments. Up to 2 revision rounds included in the standard package.</p></div>
+      <div class="rp-step-card" style="--sc:#22c55e"><div class="rp-step-top"><span class="rp-step-ico" style="background:#dcfce7;color:#16a34a">&#127942;</span><span class="rp-step-lbl" style="color:#22c55e">Step 08</span></div><h3>Publication &amp; Certificate</h3><p>Final publication in the journal. DOI assigned, acceptance letter obtained, and certificate of publication provided.</p></div>
+    </div>
+    <div class="rp-doi-banner">&#127942; <strong>Your Research is Published &mdash; DOI Assigned</strong><span>Globally Indexed &middot; Citable &middot; PhD Compliant &middot; Yours Forever</span></div>
+  </div>
+
+  <div class="svc-section">
+    <p class="svc-label">RESEARCH DOMAINS</p>
+    <h2>We Publish Across <em>All Disciplines</em></h2>
+    <p class="svc-sub">From science and technology to humanities and arts, we support research across a wide range of academic disciplines.</p>
+    <div class="rp-domains">
+      <div class="rp-domain" style="--dc:#3b82f6"><span style="background:#dbeafe;color:#2563eb">&#128201;</span>Management &amp; Commerce<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#22c55e"><span style="background:#dcfce7;color:#16a34a">&#9881;</span>Engineering &amp; Technology<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#a855f7"><span style="background:#ede9fe;color:#7c3aed">&#10133;</span>Medical &amp; Health Sciences<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#f59e0b"><span style="background:#fef3c7;color:#d97706">&#128101;</span>Social Sciences<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#ef4444"><span style="background:#ffe4e6;color:#e11d48">&#128218;</span>Education<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#14b8a6"><span style="background:#ccfbf1;color:#0d9488">&#9878;</span>Law &amp; Legal Studies<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#f59e0b"><span style="background:#fef3c7;color:#d97706">&#128138;</span>Pharmacy &amp; Life Sciences<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#3b82f6"><span style="background:#dbeafe;color:#2563eb">&#128187;</span>Computer Science &amp; IT<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#22c55e"><span style="background:#dcfce7;color:#16a34a">&#127807;</span>Agriculture<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#22c55e"><span style="background:#dcfce7;color:#16a34a">&#127807;</span>Environmental Sciences<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#ef4444"><span style="background:#ffe4e6;color:#e11d48">&#128200;</span>Economics<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#a855f7"><span style="background:#ede9fe;color:#7c3aed">&#129504;</span>Psychology &amp; Behavioural Sciences<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#14b8a6"><span style="background:#ccfbf1;color:#0d9488">&#128218;</span>Literature &amp; Linguistics<span class="rp-arr">&rarr;</span></div>
+      <div class="rp-domain" style="--dc:#f59e0b"><span style="background:#fef3c7;color:#d97706">&#128165;</span>Humanities &amp; Arts<span class="rp-arr">&rarr;</span></div>
+    </div>
+  </div>
+
+  <div class="svc-section svc-bg-light">
+    <p class="svc-label">WHY SIMPLY SLAY PUBLICATION HOUSE</p>
+    <h2>Why Researchers Choose <em>Simply Slay</em></h2>
+    <p class="svc-sub">Your research deserves the right support. Here's why thousands of researchers trust Simply Slay Publication House for their publication journey.</p>
+    <div class="diss-features-grid">
+      <div class="diss-feat-card" style="--acc:#3b82f6"><div class="diss-feat-ico" style="background:#dbeafe;color:#2563eb">&#127758;</div><h3>Trusted Journal Network</h3><p>Access to reputable Scopus, Web of Science, PubMed and other recognised journals across diverse research disciplines.</p></div>
+      <div class="diss-feat-card" style="--acc:#a855f7"><div class="diss-feat-ico" style="background:#ede9fe;color:#7c3aed">&#128203;</div><h3>End-to-End Publication Support</h3><p>From journal selection and manuscript preparation to submission guidance and reviewer response support.</p></div>
+      <div class="diss-feat-card" style="--acc:#22c55e"><div class="diss-feat-ico" style="background:#dcfce7;color:#16a34a">&#128737;</div><h3>Journal Compliance</h3><p>Manuscripts are prepared and formatted according to the target journal's author guidelines and requirements.</p></div>
+      <div class="diss-feat-card" style="--acc:#f59e0b"><div class="diss-feat-ico" style="background:#fef3c7;color:#d97706">&#129309;</div><h3>Ethical Publication Support</h3><p>We focus on legitimate journals and transparent publication practices to protect your academic credibility.</p></div>
+      <div class="diss-feat-card" style="--acc:#14b8a6"><div class="diss-feat-ico" style="background:#ccfbf1;color:#0d9488">&#127919;</div><h3>Smart Journal Matching</h3><p>We help identify suitable journals based on your subject, scope, indexing needs and publication goals.</p></div>
+      <div class="diss-feat-card" style="--acc:#6366f1"><div class="diss-feat-ico" style="background:#e0e7ff;color:#4f46e5">&#127891;</div><h3>Doctoral &amp; Academic Standards</h3><p>Support aligned with university, doctoral programme and research publication requirements.</p></div>
+    </div>
+  </div>
+
+  <div class="svc-cta"><a class="btn btn-gold" href="#contact" onclick="closeModal()">Start Your Publication Journey &rarr;</a></div>
+  `,
   thesis: `
   <div class="svc-hero">
-    <p class="svc-eyebrow">Thesis Writing Support</p>
     <h1>Turning Your Research Into a <em>Stronger Thesis</em></h1>
     <p class="svc-sub">From idea to final submission, we provide expert guidance, professional support, and personalised solutions for your thesis journey.</p>
     <a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Free Thesis Consultation &rarr;</a>
