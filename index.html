@@ -36,7 +36,7 @@
           <div class="mega-col">
             <p class="mega-heading">&#127979; Research &amp; Writing</p>
             <a href="javascript:void(0)" onclick="openModal('thesis')">Thesis Writing</a>
-            <a href="#services">Dissertation Writing</a>
+            <a href="javascript:void(0)" onclick="openModal('dissertation')">Dissertation Writing</a>
             <a href="#services">Research Publication</a>
             <a href="#services">Book Publication</a>
             <a href="#services">Profile Enhancement</a>
@@ -339,6 +339,58 @@
 
 <script>
 const modalContent = {
+  dissertation: `
+  <div class="svc-hero">
+    <p class="svc-eyebrow">&#127891; Complete Dissertation Assistance</p>
+    <h1>Dissertation Writing <em>Support</em></h1>
+    <p class="svc-sub">Comprehensive dissertation support including research planning, chapter structuring, data interpretation, and professional editing services.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;">
+      <a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Started &rarr;</a>
+      <a class="btn btn-ghost" href="https://wa.me/917905551271">&#128172; WhatsApp Us</a>
+    </div>
+    <div class="diss-features">
+      <div class="diss-feat"><span>&#128203;</span>Research Planning &amp; Proposal</div>
+      <div class="diss-feat"><span>&#128196;</span>Chapter Structuring &amp; Content Writing</div>
+      <div class="diss-feat"><span>&#128201;</span>Data Interpretation &amp; Analysis</div>
+      <div class="diss-feat"><span>&#9999;</span>Professional Editing &amp; Proofreading</div>
+      <div class="diss-feat"><span>&#128737;</span>On-Time Delivery &amp; 100% Confidentiality</div>
+    </div>
+  </div>
+  <div class="svc-section">
+    <h2 style="text-align:center;font-family:var(--serif);font-size:clamp(26px,3vw,38px);color:var(--navy);margin-bottom:40px;">Service <em style="color:#3b6fd4;font-style:italic;">Overview</em></h2>
+    <div class="diss-overview">
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Expert guidance on dissertation proposal development and approval</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Support with research design and methodology selection</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Assistance in data collection, analysis, and interpretation</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Chapter-by-chapter writing and structuring support</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Professional editing, formatting, and plagiarism checking</p></div>
+    </div>
+  </div>
+  <div class="svc-section svc-bg-light">
+    <p class="svc-label">KEY FEATURES</p>
+    <h2>What Makes Our Service <em>Stand Out</em></h2>
+    <p class="svc-sub">We combine expertise, dedication and a student-first approach to make your dissertation journey smooth and successful.</p>
+    <div class="diss-features-grid">
+      <div class="diss-feat-card" style="--acc:#a855f7"><div class="diss-feat-ico" style="background:#ede9fe;color:#7c3aed">&#128203;</div><h3>Proposal Development</h3><p>Create a strong dissertation proposal that secures approval from your committee.</p></div>
+      <div class="diss-feat-card" style="--acc:#3b82f6"><div class="diss-feat-ico" style="background:#dbeafe;color:#2563eb">&#128269;</div><h3>Research Planning</h3><p>Design a robust research methodology and plan your dissertation timeline.</p></div>
+      <div class="diss-feat-card" style="--acc:#22c55e"><div class="diss-feat-ico" style="background:#dcfce7;color:#16a34a">&#128218;</div><h3>Chapter Structuring</h3><p>Organize your dissertation logically, with clear chapter development.</p></div>
+      <div class="diss-feat-card" style="--acc:#f59e0b"><div class="diss-feat-ico" style="background:#fef3c7;color:#d97706">&#128201;</div><h3>Data Interpretation</h3><p>Professional support with data analysis and presenting your findings.</p></div>
+      <div class="diss-feat-card" style="--acc:#ef4444"><div class="diss-feat-ico" style="background:#ffe4e6;color:#e11d48">&#9999;</div><h3>Editing Support</h3><p>Comprehensive editing and formatting to meet university requirements.</p></div>
+      <div class="diss-feat-card" style="--acc:#14b8a6"><div class="diss-feat-ico" style="background:#ccfbf1;color:#0d9488">&#128737;</div><h3>Defence Preparation</h3><p>Guidance and practice for your dissertation defence presentation.</p></div>
+    </div>
+  </div>
+  <div class="svc-section">
+    <h2 style="text-align:center;font-family:var(--serif);font-size:clamp(26px,3vw,38px);color:var(--navy);margin-bottom:10px;">Our <em style="color:#3b6fd4;font-style:italic;">Process</em></h2>
+    <p class="svc-sub">Step-by-step journey to your success</p>
+    <div class="svc-steps">
+      <div class="svc-step"><div class="svc-step-icon" style="background:#3b82f6;font-size:15px;font-weight:700;">01</div><div class="svc-step-body" style="border-left-color:#3b82f6"><h3>Proposal Stage</h3><p>Develop and refine your dissertation proposal with expert guidance.</p></div></div>
+      <div class="svc-step"><div class="svc-step-icon" style="background:#a855f7;font-size:15px;font-weight:700;">02</div><div class="svc-step-body" style="border-left-color:#a855f7"><h3>Research Phase</h3><p>Conduct research with ongoing support and consultation.</p></div></div>
+      <div class="svc-step"><div class="svc-step-icon" style="background:#f59e0b;font-size:15px;font-weight:700;">03</div><div class="svc-step-body" style="border-left-color:#f59e0b"><h3>Writing &amp; Analysis</h3><p>Write chapters, analyze data, and develop your arguments.</p></div></div>
+      <div class="svc-step"><div class="svc-step-icon" style="background:#22c55e;font-size:15px;font-weight:700;">04</div><div class="svc-step-body" style="border-left-color:#22c55e"><h3>Finalization</h3><p>Complete editing, formatting, and prepare for defense.</p></div></div>
+    </div>
+  </div>
+  <div class="svc-cta"><a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Free Dissertation Consultation &rarr;</a></div>
+  `,
   thesis: `
   <div class="svc-hero">
     <p class="svc-eyebrow">Thesis Writing Support</p>
