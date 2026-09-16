@@ -38,7 +38,7 @@
             <a href="javascript:void(0)" onclick="openModal('thesis')">Thesis Writing</a>
             <a href="javascript:void(0)" onclick="openModal('dissertation')">Dissertation Writing</a>
             <a href="javascript:void(0)" onclick="openModal('research')">Research Publication</a>
-            <a href="#services">Book Publication</a>
+            <a href="javascript:void(0)" onclick="openModal('book')">Book Publication</a>
             <a href="#services">Profile Enhancement</a>
             <a href="#services">Biography Writing</a>
           </div>
@@ -476,6 +476,62 @@ const modalContent = {
   </div>
 
   <div class="svc-cta"><a class="btn btn-gold" href="#contact" onclick="closeModal()">Start Your Publication Journey &rarr;</a></div>
+  `,
+  book: `
+  <div class="svc-hero">
+    <p class="svc-eyebrow">&#128218; Complete Publishing Solutions</p>
+    <h1>Book Publication &amp; <em>Promotion</em></h1>
+    <p class="svc-sub">End-to-end book publishing services including manuscript preparation, editing, publishing guidance, and effective promotion strategies.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;">
+      <a class="btn btn-gold" href="#contact" onclick="closeModal()">Get Started &rarr;</a>
+      <a class="btn btn-ghost" href="https://wa.me/917905551271">&#128172; WhatsApp Us</a>
+    </div>
+    <div class="rp-stats">
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#dbeafe;color:#2563eb">&#128218;</span><div><strong>Manuscript Preparation</strong><span>Polishing your work for the best presentation.</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#ede9fe;color:#7c3aed">&#9999;</span><div><strong>Editing &amp; Formatting</strong><span>Professional editing and journal-compliant formatting.</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#dcfce7;color:#16a34a">&#9729;</span><div><strong>Publishing Guidance</strong><span>Step-by-step support through the publication process.</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#fef3c7;color:#d97706">&#128227;</span><div><strong>Promotion Strategies</strong><span>Increase visibility and reach your target audience.</span></div></div>
+      <div class="rp-stat"><span class="rp-stat-ico" style="background:#ffe4e6;color:#e11d48">&#128201;</span><div><strong>Wide Distribution</strong><span>Get your book in global and academic markets.</span></div></div>
+    </div>
+  </div>
+
+  <div class="svc-section">
+    <p class="svc-label">OVERVIEW</p>
+    <h2 style="text-align:center;font-family:var(--serif);font-size:clamp(26px,3vw,38px);color:var(--navy);margin-bottom:40px;">Service <em style="color:#3b6fd4;font-style:italic;">Overview</em></h2>
+    <div class="diss-overview">
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Professional manuscript editing and formatting services</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Guidance on traditional and self-publishing options</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>ISBN registration and copyright support</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Book cover design and layout assistance</p></div>
+      <div class="diss-ov-row"><span class="diss-check">&#10003;</span><p>Marketing and promotion strategy development</p></div>
+    </div>
+  </div>
+
+  <div class="svc-section svc-bg-light">
+    <h2 style="text-align:center;font-family:var(--serif);font-size:clamp(26px,3vw,38px);color:var(--navy);margin-bottom:10px;">Key <em style="color:#3b6fd4;font-style:italic;">Features</em></h2>
+    <p class="svc-sub">What makes our service stand out</p>
+    <div class="diss-features-grid">
+      <div class="diss-feat-card" style="--acc:#3b82f6"><div class="diss-feat-ico" style="background:#dbeafe;color:#2563eb">&#10003;</div><h3>Manuscript Preparation</h3><p>Professional editing, proofreading, and formatting to publishing standards.</p></div>
+      <div class="diss-feat-card" style="--acc:#a855f7"><div class="diss-feat-ico" style="background:#ede9fe;color:#7c3aed">&#10003;</div><h3>Publishing Guidance</h3><p>Expert advice on choosing between traditional publishing and self-publishing.</p></div>
+      <div class="diss-feat-card" style="--acc:#14b8a6"><div class="diss-feat-ico" style="background:#ccfbf1;color:#0d9488">&#10003;</div><h3>ISBN &amp; Copyright</h3><p>Complete support for ISBN registration and copyright protection.</p></div>
+      <div class="diss-feat-card" style="--acc:#22c55e"><div class="diss-feat-ico" style="background:#dcfce7;color:#16a34a">&#10003;</div><h3>Design Support</h3><p>Assistance with professional book cover design and interior layout.</p></div>
+      <div class="diss-feat-card" style="--acc:#f59e0b"><div class="diss-feat-ico" style="background:#fef3c7;color:#d97706">&#10003;</div><h3>Promotion Strategy</h3><p>Develop effective marketing and promotion plans for your book.</p></div>
+      <div class="diss-feat-card" style="--acc:#ef4444"><div class="diss-feat-ico" style="background:#ffe4e6;color:#e11d48">&#10003;</div><h3>Distribution Guidance</h3><p>Support with distribution channels, both online and offline.</p></div>
+    </div>
+  </div>
+
+  <div class="svc-section">
+    <h2 style="text-align:center;font-family:var(--serif);font-size:clamp(26px,3vw,38px);color:var(--navy);margin-bottom:10px;">Our <em style="color:#3b6fd4;font-style:italic;">Process</em></h2>
+    <p class="svc-sub">Step-by-step journey to your success</p>
+    <div class="svc-steps">
+      <div class="svc-step"><div class="svc-step-icon" style="background:#3b82f6;font-size:15px;font-weight:700;">01</div><div class="svc-step-body" style="border-left-color:#3b82f6"><h3>Manuscript Review</h3><p>Assess your manuscript and provide professional editing recommendations.</p></div></div>
+      <div class="svc-step"><div class="svc-step-icon" style="background:#a855f7;font-size:15px;font-weight:700;">02</div><div class="svc-step-body" style="border-left-color:#a855f7"><h3>Publishing Planning</h3><p>Choose the best publishing route and prepare all necessary materials.</p></div></div>
+      <div class="svc-step"><div class="svc-step-icon" style="background:#f59e0b;font-size:15px;font-weight:700;">03</div><div class="svc-step-body" style="border-left-color:#f59e0b"><h3>Production</h3><p>Complete the editing, design, and formatting process.</p></div></div>
+      <div class="svc-step"><div class="svc-step-icon" style="background:#22c55e;font-size:15px;font-weight:700;">04</div><div class="svc-step-body" style="border-left-color:#22c55e"><h3>Launch &amp; Promotion</h3><p>Publish your book and implement marketing strategies.</p></div></div>
+    </div>
+  </div>
+
+  <div class="svc-cta"><a class="btn btn-gold" href="#contact" onclick="closeModal()">Start Your Book Publishing Journey &rarr;</a></div>
   `,
   thesis: `
   <div class="svc-hero">
