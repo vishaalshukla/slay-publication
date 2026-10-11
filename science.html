@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Science Coaching — EdusphereX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Jost',sans-serif;color:#10203f;background:#fff;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;}
+
+/* HEADER */
+.site-header{background:rgba(253,250,244,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e7ddc7;position:sticky;top:0;z-index:50;}
+.header-inner{max-width:1320px;margin:0 auto;padding:14px 5vw;display:flex;align-items:center;justify-content:space-between;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;}
+.brand-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#10203f;}
+.brand-sub{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:#a8802f;font-weight:500;}
+.back-btn{background:#10203f;color:#fdfaf4;padding:11px 22px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:background .18s;}
+.back-btn:hover{background:#c9a24a;color:#fff;}
+
+/* HERO */
+.neet-hero{background:linear-gradient(120deg,#052e16 0%,#0a3d1a 55%,#0a4020 100%);padding:80px 5vw;position:relative;overflow:hidden;}
+.neet-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(0,220,100,.1) 0%,transparent 65%);}
+.hero-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;position:relative;z-index:1;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;}
+.hero-badge-pill{border:1px solid rgba(0,220,100,.4);border-radius:100px;padding:7px 18px;font-size:12px;color:rgba(255,255,255,.85);letter-spacing:.04em;}
+.hero-badge-pill span{color:#00dc64;margin:0 8px;}
+.neet-hero h1{font-size:clamp(36px,5vw,62px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:18px;}
+.neet-hero h1 em{color:#00dc64;font-style:normal;}
+.hero-sub{font-size:18px;font-weight:600;color:rgba(255,255,255,.9);margin-bottom:14px;line-height:1.4;}
+.hero-desc{font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);max-width:48ch;margin-bottom:32px;}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:32px;}
+.btn-cyan{background:#00dc64;color:#052e16;padding:14px 28px;border-radius:100px;font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px;transition:background .18s;}
+.btn-cyan:hover{background:#00b8e0;}
+.btn-outline-white{border:2px solid rgba(255,255,255,.5);color:#fff;padding:14px 28px;border-radius:100px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;transition:all .18s;}
+.btn-outline-white:hover{background:rgba(255,255,255,.1);}
+.hero-trust{display:flex;flex-wrap:wrap;gap:24px;border-top:1px solid rgba(255,255,255,.15);padding-top:24px;}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.75);}
+.trust-item span{font-size:18px;}
+.hero-img-wrap{position:relative;}
+.hero-img-wrap img{border-radius:16px;width:100%;object-fit:cover;max-height:420px;}
+.dream-tag{position:absolute;top:24px;right:24px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:14px 18px;color:#fff;font-size:15px;font-weight:600;line-height:1.4;text-align:center;}
+.dream-tag span{display:block;font-size:22px;}
+
+/* WHY SECTION */
+.why-section{padding:96px 5vw;background:#f0fff4;}
+.section-center{text-align:center;margin-bottom:56px;}
+.section-center h2{font-size:clamp(32px,4vw,50px);font-weight:800;color:#10203f;margin-bottom:12px;}
+.section-center h2 em{color:#16a34a;font-style:normal;}
+.section-center p{font-size:16px;color:#5a6478;max-width:52ch;margin:0 auto;}
+.why-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;}
+.why-card{background:#fff;border-radius:16px;padding:36px 28px;text-align:center;box-shadow:0 4px 24px rgba(26,111,212,.08);transition:transform .2s,box-shadow .2s;}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(26,111,212,.14);}
+.why-icon{width:80px;height:80px;border-radius:50%;background:#dcfce7;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 20px;}
+.why-card h3{font-size:18px;font-weight:700;color:#16a34a;margin-bottom:10px;line-height:1.3;}
+.why-card .rule{width:32px;height:3px;background:#1a6fd4;margin:0 auto 14px;border-radius:2px;}
+.why-card p{font-size:14px;line-height:1.7;color:#5a6478;}
+
+/* MENTEE SECTION */
+.mentee-section{padding:96px 5vw;background:linear-gradient(135deg,#0d2147 0%,#0a3060 50%,#0d4080 100%);}
+.mentee-inner{max-width:1200px;margin:0 auto;}
+.mentee-head{margin-bottom:48px;}
+.mentee-head h2{font-size:clamp(30px,4vw,48px);font-weight:800;color:#fff;margin-bottom:10px;}
+.mentee-head h2 em{color:#00dc64;font-style:normal;}
+.mentee-head p{font-size:16px;color:rgba(255,255,255,.7);}
+.mentee-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.mentee-item{display:flex;align-items:flex-start;gap:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:20px 22px;}
+.mentee-ico{width:44px;height:44px;border-radius:50%;background:#00dc64;display:flex;align-items:center;justify-content:center;font-size:20px;flex:none;}
+.mentee-item strong{display:block;font-size:15px;font-weight:700;color:#fff;margin-bottom:4px;}
+.mentee-item span{font-size:13px;color:rgba(255,255,255,.6);}
+
+/* JOURNEY SECTION */
+.journey-section{padding:96px 5vw;background:#fff;}
+.journey-inner{max-width:1200px;margin:0 auto;}
+.journey-inner h2{font-size:clamp(32px,4vw,52px);font-weight:800;color:#10203f;margin-bottom:8px;}
+.journey-inner h2 em{color:#16a34a;font-style:normal;}
+.journey-sub{font-size:16px;color:#5a6478;margin-bottom:56px;}
+.journey-steps{display:flex;align-items:flex-start;gap:0;overflow-x:auto;padding-bottom:16px;}
+.j-step{display:flex;flex-direction:column;align-items:center;text-align:center;min-width:130px;flex:1;}
+.j-step-top{display:flex;align-items:center;width:100%;}
+.j-circle{width:72px;height:72px;border-radius:50%;background:#dcfce7;display:flex;align-items:center;justify-content:center;font-size:30px;flex:none;margin:0 auto;}
+.j-arrow{flex:1;height:2px;background:#bbf7d0;position:relative;top:0;}
+.j-arrow::after{content:'→';position:absolute;right:-8px;top:-11px;color:#16a34a;font-size:18px;}
+.j-step:last-child .j-arrow{display:none;}
+.j-step h3{font-size:13px;font-weight:700;color:#16a34a;margin:14px 0 6px;}
+.j-step p{font-size:12px;color:#5a6478;line-height:1.5;padding:0 8px;}
+
+/* PRICING */
+.pricing-section{padding:96px 5vw;background:#fff;}
+.pricing-inner{max-width:1000px;margin:0 auto;}
+.pricing-eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#16a34a;font-weight:700;margin-bottom:10px;}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px;align-items:start;}
+.plan-card{border-radius:20px;padding:40px 36px;border:2px solid #e2e8f0;background:#fff;position:relative;transition:box-shadow .2s;}
+.plan-card:hover{box-shadow:0 12px 40px rgba(26,111,212,.1);}
+.plan-featured{background:linear-gradient(145deg,#0a1228,#0d3060);border-color:#00dc64;box-shadow:0 16px 56px rgba(0,220,100,.18);}
+.plan-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#00dc64;color:#052e16;font-size:12px;font-weight:700;padding:6px 20px;border-radius:100px;white-space:nowrap;}
+.plan-tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#16a34a;font-weight:700;margin-bottom:8px;}
+.plan-header h3{font-size:22px;font-weight:800;color:#10203f;margin-bottom:16px;}
+.plan-featured .plan-header h3{color:#fff;}
+.plan-price{display:flex;align-items:baseline;gap:4px;margin-bottom:12px;}
+.currency{font-size:22px;font-weight:700;color:#10203f;}
+.amount{font-size:52px;font-weight:800;color:#10203f;line-height:1;}
+.period{font-size:15px;color:#5a6478;}
+.plan-featured .currency,.plan-featured .amount{color:#fff;}
+.plan-featured .period{color:rgba(255,255,255,.55);}
+.plan-tagline{font-size:14px;color:#5a6478;margin-bottom:28px;line-height:1.5;}
+.plan-features{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;padding:0;}
+.plan-features li{display:flex;align-items:center;gap:12px;font-size:15px;color:#2d3748;}
+.plan-features-dark li{color:rgba(255,255,255,.85);}
+.check{width:24px;height:24px;border-radius:50%;background:#dcfce7;color:#16a34a;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none;}
+.check-cyan{background:rgba(0,220,100,.15);color:#00dc64;}
+.plan-btn{display:block;text-align:center;padding:16px;border-radius:100px;font-size:15px;font-weight:700;transition:all .18s;}
+.plan-btn-outline{border:2px solid #1a6fd4;color:#16a34a;}
+.plan-btn-outline:hover{background:#1a6fd4;color:#fff;}
+.plan-btn-cyan{background:#00dc64;color:#052e16;}
+.plan-btn-cyan:hover{background:#00b8e0;}
+.plan-note{text-align:center;font-size:12px;color:#9aa5b4;margin-top:12px;}
+.pricing-guarantee{display:flex;align-items:center;gap:16px;background:#f0fff4;border:1px solid #bfdbfe;border-radius:12px;padding:20px 28px;margin-top:40px;}
+.pricing-guarantee span{font-size:28px;}
+.pricing-guarantee p{font-size:14px;color:#2d3748;line-height:1.6;}
+.pricing-guarantee strong{color:#16a34a;}
+@media(max-width:860px){.pricing-grid{grid-template-columns:1fr;}}
+
+/* CTA + FAQ */
+.cta-faq{padding:96px 5vw;background:#f0fff4;}
+.cta-faq-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.cta-box{background:linear-gradient(135deg,#052e16,#0a4020);border-radius:20px;padding:48px 40px;color:#fff;}
+.cta-box h2{font-size:clamp(26px,3vw,38px);font-weight:800;line-height:1.2;margin-bottom:14px;}
+.cta-box h2 em{color:#00dc64;font-style:normal;}
+.cta-box p{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:28px;line-height:1.7;}
+.cta-stats{display:flex;gap:24px;margin-top:32px;border-top:1px solid rgba(255,255,255,.15);padding-top:24px;flex-wrap:wrap;}
+.cta-stat{display:flex;align-items:center;gap:10px;}
+.cta-stat span{font-size:20px;}
+.cta-stat strong{display:block;font-size:16px;font-weight:700;color:#fff;}
+.cta-stat small{font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.06em;}
+.faq-box h2{font-size:24px;font-weight:700;color:#10203f;margin-bottom:6px;}
+.faq-box .faq-link{font-size:13px;color:#16a34a;margin-bottom:28px;display:inline-block;}
+.faq-item{border-bottom:1px solid #e2e8f0;}
+.faq-item summary{padding:18px 0;font-size:15px;color:#10203f;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';font-size:20px;color:#16a34a;font-weight:300;}
+details[open] summary::after{content:'−';}
+.faq-item p{font-size:14px;line-height:1.75;color:#5a6478;padding-bottom:16px;}
+
+/* FINAL CTA */
+.final-cta{padding:96px 5vw;background:linear-gradient(120deg,#052e16,#16a34a);}
+.final-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.final-img img{border-radius:16px;width:100%;object-fit:cover;max-height:380px;}
+.final-content h2{font-size:clamp(28px,3.5vw,46px);font-weight:800;color:#fff;line-height:1.2;margin-bottom:18px;}
+.final-content h2 .s1{color:#00dc64;}
+.final-content h2 .s2{color:#a78bfa;}
+.final-content p{font-size:15px;color:rgba(255,255,255,.8);line-height:1.75;margin-bottom:28px;}
+.final-features{display:flex;flex-direction:column;gap:14px;margin-bottom:32px;}
+.final-feat{display:flex;align-items:center;gap:14px;font-size:15px;color:#fff;font-weight:500;}
+.final-feat-ico{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex:none;}
+.btn-white{background:#fff;color:#10203f;padding:16px 32px;border-radius:100px;font-size:15px;font-weight:700;display:inline-flex;align-items:center;gap:8px;transition:background .18s;}
+.btn-white:hover{background:#f0f0f0;}
+.final-note{font-size:12px;color:rgba(255,255,255,.55);margin-top:12px;}
+
+/* FOOTER */
+.neet-footer{background:#10203f;padding:28px 5vw;text-align:center;}
+.neet-footer p{font-size:13px;color:rgba(255,255,255,.45);}
+.neet-footer a{color:#c9a24a;}
+
+@media(max-width:860px){
+  .hero-inner,.cta-faq-inner,.final-inner{grid-template-columns:1fr;}
+  .hero-img-wrap{display:none;}
+  .mentee-grid{grid-template-columns:1fr;}
+  .journey-steps{gap:0;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="EdusphereX" />
+      <span>
+        <span class="brand-name">EdusphereX</span><br/>
+        <span class="brand-sub">Publication House</span>
+      </span>
+    </a>
+    <a class="back-btn" href="index.html">← Back to Home</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="neet-hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badges">
+        <span class="hero-badge-pill">Expert Teachers <span>|</span> Personalized Support <span>|</span> Better Results</span>
+      </div>
+      <h1><em>Science</em> Coaching Program</h1>
+      <p class="hero-sub">Learn Concepts. Build Clarity.<br/>Score with Confidence.</p>
+      <p class="hero-desc">Get personalized science coaching from expert teachers who make Physics, Chemistry and Biology easy to understand — from Class 8 to Class 12 and competitive exams.</p>
+      <div class="hero-btns">
+        <a class="btn-cyan" href="#contact">&#128197; Book a Free Demo Class &rarr;</a>
+        <a class="btn-outline-white" href="#why">Explore Coaching Plans &rarr;</a>
+      </div>
+      <div class="hero-trust">
+        <span class="trust-item"><span>&#128104;&#8205;&#9877;</span> Expert Teachers</span>
+        <span class="trust-item"><span>&#128203;</span> Personalized Plans</span>
+        <span class="trust-item"><span>&#128737;</span> Proven Results</span>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Science coaching session" />
+      <div class="dream-tag"><span>&#10084;&#65039;</span>Your Score<br/>Will Rise</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SCIENCE COACHING -->
+<section class="why-section" id="why">
+  <div class="section-center">
+    <h2>Why <em>Science Coaching?</em></h2>
+    <p>Because understanding science is the foundation of every great score.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">&#127919;</div>
+      <h3>Concept-First Teaching</h3>
+      <div class="rule"></div>
+      <p>We build strong fundamentals before moving to problems. No rote learning — real understanding that lasts.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">&#128104;&#8205;&#9877;</div>
+      <h3>Expert Subject Teachers</h3>
+      <div class="rule"></div>
+      <p>Dedicated teachers for Physics, Chemistry and Biology — specialists who know exactly where students struggle.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">&#128218;</div>
+      <h3>Chapter-wise Preparation</h3>
+      <div class="rule"></div>
+      <p>Structured chapter-by-chapter coverage with notes, practice questions and revision sheets for every topic.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">&#128201;</div>
+      <h3>Regular Test &amp; Feedback</h3>
+      <div class="rule"></div>
+      <p>Weekly tests with detailed feedback. Know your weak chapters and fix them before the exam.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET AS A MENTEE -->
+<section class="mentee-section">
+  <div class="mentee-inner">
+    <div class="mentee-head">
+      <h2>What You Get as a <em>Student</em></h2>
+      <p>More than just classes. A complete science learning system.</p>
+    </div>
+    <div class="mentee-grid">
+      <div class="mentee-item">
+        <div class="mentee-ico">&#128203;</div>
+        <div><strong>Personalized study plan</strong><span>Based on your goals &amp; level</span></div>
+      </div>
+      <div class="mentee-item">
+        <div class="mentee-ico">&#127919;</div>
+        <div><strong>Revision strategy</strong><span>Focused &amp; smart revision</span></div>
+      </div>
+      <div class="mentee-item">
+        <div class="mentee-ico">&#128101;</div>
+        <div><strong>Weekly 1-to-1 / Group mentoring</strong><span>Regular sessions with doctors</span></div>
+      </div>
+      <div class="mentee-item">
+        <div class="mentee-ico">&#9200;</div>
+        <div><strong>Time-management guidance</strong><span>Plan better, study smarter</span></div>
+      </div>
+      <div class="mentee-item">
+        <div class="mentee-ico">&#10067;</div>
+        <div><strong>Doubt-solving sessions</strong><span>Get answers, not just doubts</span></div>
+      </div>
+      <div class="mentee-item">
+        <div class="mentee-ico">&#128196;</div>
+        <div><strong>Exam-oriented preparation</strong><span>Question practice &amp; strategy</span></div>
+      </div>
+      <div class="mentee-item">
+        <div class="mentee-ico">&#128202;</div>
+        <div><strong>Mock-test analysis</strong><span>Detailed performance review</span></div>
+      </div>
+      <div class="mentee-item">
+        <div class="mentee-ico">&#128106;</div>
+        <div><strong>Parent progress updates</strong><span>Stay informed, always</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YOUR SCIENCE JOURNEY -->
+<section class="journey-section">
+  <div class="journey-inner">
+    <h2>Your <em>Science</em> Journey</h2>
+    <p class="journey-sub">A step-by-step path to mastering science.</p>
+    <div class="journey-steps">
+      <div class="j-step">
+        <div class="j-step-top"><div class="j-circle">&#128203;</div><div class="j-arrow"></div></div>
+        <h3>Assessment</h3><p>Know your current level &amp; strengths.</p>
+      </div>
+      <div class="j-step">
+        <div class="j-step-top"><div class="j-circle">&#127919;</div><div class="j-arrow"></div></div>
+        <h3>Goal Setting</h3><p>Set your target &amp; milestones.</p>
+      </div>
+      <div class="j-step">
+        <div class="j-step-top"><div class="j-circle">&#128218;</div><div class="j-arrow"></div></div>
+        <h3>Study Plan</h3><p>Personalized study plan.</p>
+      </div>
+      <div class="j-step">
+        <div class="j-step-top"><div class="j-circle">&#128104;&#8205;&#9877;</div><div class="j-arrow"></div></div>
+        <h3>Weekly Mentorship</h3><p>1-to-1 / Group sessions.</p>
+      </div>
+      <div class="j-step">
+        <div class="j-step-top"><div class="j-circle">&#128201;</div><div class="j-arrow"></div></div>
+        <h3>Test Analysis</h3><p>Performance review &amp; insights.</p>
+      </div>
+      <div class="j-step">
+        <div class="j-step-top"><div class="j-circle">&#128260;</div><div class="j-arrow"></div></div>
+        <h3>Revision</h3><p>Focused revision plan.</p>
+      </div>
+      <div class="j-step">
+        <div class="j-step-top"><div class="j-circle">&#127891;</div><div class="j-arrow"></div></div>
+        <h3>Exam Ready</h3><p>Final push to top scores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="plans">
+  <div class="pricing-inner">
+    <div class="section-center">
+      <p class="pricing-eyebrow">Simple, Transparent Pricing</p>
+      <h2>Choose Your <em>Mentorship Plan</em></h2>
+      <p>No hidden fees. No long-term lock-in. Just real guidance that gets results.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <!-- MONTHLY -->
+      <div class="plan-card">
+        <div class="plan-header">
+          <p class="plan-tag">₹999</p>
+          <h3>Weekly Doubt Clearance Class</h3>
+          <div class="plan-price">
+            <span class="currency">₹</span><span class="amount">999</span>
+          </div>
+          <p class="plan-tagline">Get your science doubts cleared every week by expert teachers.</p>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span>Monthly group discussions</li>
+          <li><span class="check">✓</span>Weekly progress analysis</li>
+          <li><span class="check">✓</span>Test planning &amp; strategy</li>
+          <li><span class="check">✓</span>Weekly doubt clearance session</li>
+          <li><span class="check">✓</span>Performance feedback reports</li>
+          <li><span class="check">✓</span>Study resource access</li>
+        </ul>
+        <a class="plan-btn plan-btn-outline" href="https://wa.me/917905551271?text=Hi%2C%20I%20want%20to%20enroll%20in%20the%20Weekly%20Doubt%20Clearance%20Class%20%E2%82%B9999">Get Started &rarr;</a>
+        <p class="plan-note">Cancel anytime. No commitment.</p>
+      </div>
+
+      <!-- YEARLY PREMIUM — HIGHLIGHTED -->
+      <div class="plan-card plan-featured">
+        <div class="plan-badge">⭐ Most Popular</div>
+        <div class="plan-header">
+          <p class="plan-tag" style="color:#00dc64;">₹4,999</p>
+          <h3>Weekly Coaching Meet</h3>
+          <div class="plan-price">
+            <span class="currency">₹</span><span class="amount">4,999</span>
+          </div>
+          <p class="plan-tagline" style="color:rgba(255,255,255,.75);">Full teacher-led weekly coaching for serious science students.</p>
+        </div>
+        <ul class="plan-features plan-features-dark">
+          <li><span class="check check-cyan">✓</span>1-on-1 personal discussions</li>
+          <li><span class="check check-cyan">✓</span>Daily personalised study plans</li>
+          <li><span class="check check-cyan">✓</span>Test planning &amp; mock analysis</li>
+          <li><span class="check check-cyan">✓</span>Motivational sessions with doctors</li>
+          <li><span class="check check-cyan">✓</span>On-call doubt clearance anytime</li>
+          <li><span class="check check-cyan">✓</span>Parent counselling sessions</li>
+          <li><span class="check check-cyan">✓</span>Weekly mentor meet</li>
+          <li><span class="check check-cyan">✓</span>Priority WhatsApp support</li>
+        </ul>
+        <a class="plan-btn plan-btn-cyan" href="https://wa.me/917905551271?text=Hi%2C%20I%20want%20to%20enroll%20in%20the%20Weekly%20Coaching%20Meet%20%E2%82%B94999">Enroll Now &rarr;</a>
+        <p class="plan-note" style="color:rgba(255,255,255,.45);">Most popular. Limited seats available.</p>
+      </div>
+
+    </div>
+    <div class="pricing-guarantee">
+      <span>🛡️</span>
+      <p><strong>Free first session, guaranteed.</strong> Try a counselling session at zero cost. If you don't find value, you owe us nothing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + FAQ -->
+<section class="cta-faq" id="contact">
+  <div class="cta-faq-inner">
+    <div class="cta-box">
+      <h2>Your Science Score Needs <em>More Than Just Notes.</em></h2>
+      <p>Get the right coaching from teachers who understand exactly where students struggle. One demo class can change everything.</p>
+      <a class="btn-cyan" href="https://wa.me/917905551271">&#128197; Book Your Free Counselling Session &rarr;</a>
+      <div class="cta-stats">
+        <div class="cta-stat"><span>&#128101;</span><div><strong>5000+</strong><small>STUDENTS GUIDED</small></div></div>
+        <div class="cta-stat"><span>&#127891;</span><div><strong>100+</strong><small>EXPERT DOCTORS</small></div></div>
+        <div class="cta-stat"><span>&#128737;</span><div><strong>98%</strong><small>SATISFACTION RATE</small></div></div>
+      </div>
+    </div>
+    <div class="faq-box">
+      <h2>Frequently Asked Questions</h2>
+      <a class="faq-link" href="https://wa.me/917905551271">View All FAQs &rarr;</a>
+      <details class="faq-item">
+        <summary>How is this different from regular tuition classes?</summary>
+        <p>Unlike regular tuition, our coaching is concept-driven and personalized. A dedicated teacher works with you individually, identifies your weak chapters, and builds a strategy specifically for you.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which classes and subjects are covered?</summary>
+        <p>We cover Physics, Chemistry and Biology for Class 8 to Class 12, as well as competitive exam preparation for NEET, JEE (science subjects) and board exams.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are classes online or offline?</summary>
+        <p>We offer both online (live video) and offline options. Most students prefer online for flexibility, but we can arrange in-person sessions based on location.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a free trial class?</summary>
+        <p>Yes — your first demo class is completely free. It includes a subject assessment and a personalized chapter plan at no cost.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I track my child's progress?</summary>
+        <p>You'll receive weekly test reports, chapter-wise performance analysis, and monthly parent update calls to track improvement and adjust the plan.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I miss a class?</summary>
+        <p>All classes are recorded and shared with you. Missed classes can be rescheduled within the same week at no extra charge.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-inner">
+    <div class="final-img">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Student studying science" />
+    </div>
+    <div class="final-content">
+      <h2>Your Science Preparation.<br/><span class="s1">Clearer.</span> <span class="s2">Stronger.</span> Focused.</h2>
+      <p>Get personalized coaching, chapter strategy and expert teaching to stay on track throughout your preparation. Join thousands of students who scored top marks with EdusphereX.</p>
+      <div class="final-features">
+        <div class="final-feat"><div class="final-feat-ico" style="background:#00dc6420;color:#00dc64;">&#127919;</div>Concept-First Teaching</div>
+        <div class="final-feat"><div class="final-feat-ico" style="background:#a78bfa20;color:#a78bfa;">&#128101;</div>Expert Science Teaching</div>
+        <div class="final-feat"><div class="final-feat-ico" style="background:#34d39920;color:#34d399;">&#128202;</div>Doubt Support &amp; Progress Tracking</div>
+      </div>
+      <a class="btn-white" href="https://wa.me/917905551271">Book a Free Demo Class &rarr;</a>
+      <p class="final-note">Start with a free 1:1 demo class</p>
+    </div>
+  </div>
+</section>
+
+<footer class="neet-footer">
+  <p>&copy; 2026 EdusphereX. All rights reserved. &nbsp;·&nbsp; <a href="index.html">Back to Main Site</a></p>
+</footer>
+
+</body>
+</html>

@@ -96,7 +96,7 @@ h1.display em { color: var(--gold-deep); font-style: italic; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(253,250,244,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 1320px; margin: 0 auto; padding: 14px 5vw; }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; mix-blend-mode: multiply; }
+.brand img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
 .brand-name { font-family: var(--serif); font-size: 22px; font-weight: 600; }
 .brand-sub { font-size: 9px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold-deep); font-weight: 500; }
@@ -285,7 +285,7 @@ h1.display em { color: var(--gold-deep); font-style: italic; }
 /* footer */
 footer { padding-top: 64px; padding-bottom: 40px; background: #f0ead8; border-top: 2px solid var(--gold); }
 .foot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--line); }
-.foot-logo { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; mix-blend-mode: multiply; margin-bottom: 14px; }
+.foot-logo { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 14px; }
 .foot-grid p { font-size: 14px; line-height: 1.7; color: var(--navy-soft); max-width: 30ch; }
 .foot-links { display: flex; flex-direction: column; gap: 10px; font-size: 14.5px; }
 .foot-bottom { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; padding-top: 24px; font-size: 12.5px; color: var(--muted); }
